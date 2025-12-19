@@ -16,7 +16,7 @@ This is a **demo of a potential open source design for ARRRmada.com**. This conc
 * Portable and lightweight
 * Jekyll for templating and automation (pure HTML in `_site` directory)
 
-> ## Access the demo website here: [https://scott-ftf.github.io/ARRRmada/](https://scott-ftf.github.io/ARRRmada/).
+> ## Access the demo website here: [https://s-ftf.github.io/ARRRmada/](https://s-ftf.github.io/ARRRmada/).
 
 ---
 
@@ -25,22 +25,22 @@ This is a **demo of a potential open source design for ARRRmada.com**. This conc
 ## Add new Merchant Listing
 To create a listing, appending the listing details to `merchants.yml` and uploading the listing image is all that's required. The rest is automated once Jekyll builds. This process relies on a listing code, which the merchant generates and submits for approval. The process is decribed below. 
 
-* **DESIGN A LISTING** - Merchants will create their own listing using the listing tool located at [https://scott-ftf.github.io/ARRRmada.com/merchant_listing](https://scott-ftf.github.io/ARRRmada.com/merchant_listing)
+* **DESIGN A LISTING** - Merchants will create their own listing using the listing tool located at [https://s-ftf.github.io/ARRRmada.com/merchant_listing](https://s-ftf.github.io/ARRRmada.com/merchant_listing)
 
 * **SUBMIT LISTING CODE** - After designing a listing, the merchants will generate a listing code. This code will be submitted for review via a GitHub issue form. This process also allows anonymous submissions. If a valid listing code is recieved, regardless of platform, the listing can be added. For example, the code could even be sent in a sapling transaction memo. The listing code is meant to be portable and submitted in any method. 
 
 Link to Github Issue form:
-[https://github.com/scott-ftf/ARRRmada/issues/new?assignees=&labels=&projects=&template=merchant_listing_submission.yaml](https://github.com/scott-ftf/ARRRmada/issues/new?assignees=&labels=&projects=&template=merchant_listing_submission.yaml)
+[https://github.com/s-ftf/ARRRmada/issues/new?assignees=&labels=&projects=&template=merchant_listing_submission.yaml](https://github.com/s-ftf/ARRRmada/issues/new?assignees=&labels=&projects=&template=merchant_listing_submission.yaml)
 
   *note: Submission via Github is prefered so that the submitter can be contacted should there be any issue with the listing*  
 
-* **DECODE LISTING CODE** - Once the listing code and listing image are received, use the listing decoder tool to make the code human-readable. [https://scott-ftf.github.io/ARRRmada/listing_decoder](https://scott-ftf.github.io/ARRRmada/listing_decoder)
+* **DECODE LISTING CODE** - Once the listing code and listing image are received, use the listing decoder tool to make the code human-readable. [https://s-ftf.github.io/ARRRmada/listing_decoder](https://s-ftf.github.io/ARRRmada/listing_decoder)
 
 * **APPEND MERCHANTS LIST** Verify the provided information is correct, and the listing meets any approval requirements. Once listing is approved, a user with commit access may append the listing to the end of: 
-[https://github.com/scott-ftf/arrrmada/edit/main/_data/merchants.yml](https://github.com/scott-ftf/arrrmada/edit/main/_data/merchants.yml)
+[https://github.com/s-ftf/arrrmada/edit/main/_data/merchants.yml](https://github.com/s-ftf/arrrmada/edit/main/_data/merchants.yml)
 
 * **UPLOAD IMAGE** - Ensure the uploaded image filename matches the filename in the listing. Once approved, a user with commit access will upload the image here:
-[https://github.com/scott-ftf/arrrmada/upload/main/assets/img/merchants](https://github.com/scott-ftf/arrrmada/upload/main/assets/img/merchants)
+[https://github.com/s-ftf/arrrmada/upload/main/assets/img/merchants](https://github.com/s-ftf/arrrmada/upload/main/assets/img/merchants)
 
 Instructions are clearly provided at each step on the website. Once the commits are made, jekyll will automatically build which can take a few minutes before the listing will appear on the live website.
 
@@ -50,10 +50,10 @@ Instructions are clearly provided at each step on the website. Once the commits 
 Donation Button can be added by appending the filename to the buttons list and uploading the image
 
 * **ADD TO LIST** - Add the filename to the YAML list in `_data/buttons.yml`
-[https://github.com/scott-ftf/ARRRmada/edit/main/_data/buttons.yml](https://github.com/scott-ftf/ARRRmada/edit/main/_data/buttons.yml)
+[https://github.com/s-ftf/ARRRmada/edit/main/_data/buttons.yml](https://github.com/s-ftf/ARRRmada/edit/main/_data/buttons.yml)
 
 * **UPLOAD IMAGE** - Upload an image to the `/button` directory: 
-[https://github.com/scott-ftf/arrrmada/upload/main/button](https://github.com/scott-ftf/arrrmada/upload/main/button)
+[https://github.com/s-ftf/arrrmada/upload/main/button](https://github.com/s-ftf/arrrmada/upload/main/button)
 
 ---
 
@@ -61,10 +61,10 @@ Donation Button can be added by appending the filename to the buttons list and u
 A Payment gateway can be added by appending the gateway listing to the gateways list, and uploading the gateway listing image.
 
 * **ADD LISTING** - Open `_data/gateways.yml` and add the new gateway listing to the YAML list. 
-[https://github.com/scott-ftf/arrrmada.com/edit/main/_data/gateways.yml](https://github.com/scott-ftf/arrrmada.com/edit/main/_data/gateways.yml) 
+[https://github.com/s-ftf/arrrmada.com/edit/main/_data/gateways.yml](https://github.com/s-ftf/arrrmada.com/edit/main/_data/gateways.yml) 
 
 * **UPLOAD IMAGE** - Upload the gateway image into:
-[https://github.com/scott-ftf/ARRRmada/upload/main/assets/img/gateways](https://github.com/scott-ftf/ARRRmada/upload/main/assets/img/gateways) 
+[https://github.com/s-ftf/ARRRmada/upload/main/assets/img/gateways](https://github.com/s-ftf/ARRRmada/upload/main/assets/img/gateways) 
 
 Each listing must include a `name`, `desc`, `img`, and `url`.
 
@@ -88,7 +88,7 @@ Example:
 
 ## Add a new Tag
 To create a new tag, it must be added manually to the YAML list. Open `_data/tags.yml` and add the new entry. The entry must include a unique ID and a unique tag name. Order and ID otherwise do not matter.
-[https://github.com/scott-ftf/arrrmada/edit/main/_data/tags.yml](https://github.com/scott-ftf/arrrmada/edit/main/_data/tags.yml)
+[https://github.com/s-ftf/arrrmada/edit/main/_data/tags.yml](https://github.com/s-ftf/arrrmada/edit/main/_data/tags.yml)
 
 Example:
 ```yaml
@@ -104,4 +104,4 @@ Example:
 
 ## Change an Existing Tag
 Tag names can be altered as long as the ID remains the same. **DO NOT CHANGE** an existing ID. Doing so will create a new tag and break existing listings.
-[https://github.com/scott-ftf/arrrmada/edit/main/_data/tags.yml](https://github.com/scott-ftf/arrrmada/edit/main/_data/tags.yml)
+[https://github.com/s-ftf/arrrmada/edit/main/_data/tags.yml](https://github.com/s-ftf/arrrmada/edit/main/_data/tags.yml)
